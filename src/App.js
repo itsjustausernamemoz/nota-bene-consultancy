@@ -10,20 +10,24 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col">
-        <header className="border-b border-gray-300">
+      <div className="min-h-screen flex flex-col bg-white text-black font-sans">
+        <header className="border-b border-gray-300 bg-white shadow-md sticky top-0 z-50">
           <div className="container mx-auto flex flex-wrap items-center justify-between p-4">
             <Link to="/" className="flex items-center space-x-3">
-              <img src="https://i.ibb.co/7vV7Q7Z/nota-bene-logo.png" alt="Nota Bene Consultancy Logo" className="h-12 w-auto" />
-              <span className="text-2xl font-bold text-red-700">Nota Bene Consultancy CC</span>
+              <img
+                src="https://i.ibb.co/3WqZq7Z/NBC-Logo.png"
+                alt="Nota Bene Consultancy Logo"
+                className="h-12 w-auto"
+              />
+              <span className="text-2xl font-extrabold text-black tracking-wide font-serif">Nota Bene Consultancy CC</span>
             </Link>
             <nav className="space-x-6 text-lg font-semibold hidden md:flex">
-              <Link to="/" className="hover:underline text-red-700">Home</Link>
-              <Link to="/about" className="hover:underline text-black">About Us</Link>
-              <Link to="/services" className="hover:underline text-black">Services</Link>
-              <Link to="/team" className="hover:underline text-black">Our Team</Link>
-              <Link to="/references" className="hover:underline text-black">References</Link>
-              <Link to="/contact" className="hover:underline text-black">Contact</Link>
+              <Link to="/" className="hover:underline hover:text-gray-700 transition duration-300 ease-in-out">Home</Link>
+              <Link to="/about" className="hover:underline hover:text-gray-700 transition duration-300 ease-in-out">About Us</Link>
+              <Link to="/services" className="hover:underline hover:text-gray-700 transition duration-300 ease-in-out">Services</Link>
+              <Link to="/team" className="hover:underline hover:text-gray-700 transition duration-300 ease-in-out">Our Team</Link>
+              <Link to="/references" className="hover:underline hover:text-gray-700 transition duration-300 ease-in-out">References</Link>
+              <Link to="/contact" className="hover:underline hover:text-gray-700 transition duration-300 ease-in-out">Contact</Link>
             </nav>
           </div>
         </header>
@@ -40,8 +44,8 @@ function App() {
         </main>
 
         <footer className="bg-black text-white py-8 mt-16">
-          <div className="container mx-auto px-4 text-center">
-            <p>&copy; 2024 Nota Bene Consultancy CC. All rights reserved.</p>
+          <div className="container mx-auto px-4 text-center font-serif">
+            <p className="text-sm">&copy; 2024 Nota Bene Consultancy CC. All rights reserved.</p>
           </div>
         </footer>
       </div>
